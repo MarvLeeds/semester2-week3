@@ -10,15 +10,15 @@ int main( void ) {
     float f = 2.3;
     int k = -2;
 
-    float *pf; // assign the pointer so that it can access the value of f
-    float *pk; // assign the pointer so taht is can access the value of k
+    float *pf = &f; // assign the pointer so that it can access the value of f
+    float *pk = (float*)&k; // assign the pointer so taht is can access the value of k
 
-    sum = 0.0; // compute the sum of the primitive values with appropriate casting
-
+    double sum = 0.0; // compute the sum of the primitive values with appropriate casting
+    sum = (double)f + (double)k;
     printf("%f\n", sum );
 
     sum = 0.0; // compute the sum via the pointers, using appropriate casting
-    
+    sum = (double)(*pf) + (double)(*(int*)pk);
     printf("%f\n", sum );  // implement this using the pointers to print the same value
 
     return 0;

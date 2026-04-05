@@ -14,9 +14,13 @@ int main( void ) {
     // you can verify sums by comparing to a calculator
 
     // compute and print d/k as a double to 16 d.p.
+    printf("d / k = %.16f", d / (double)k);
     // compute and print f-d as a double to 16 d.p.
+    printf("f - d = %.16f", (double)f - d)
     // compute and print f-d as a float to 16 d.p.
+    printf("f - d = %.16f", (double)(f - (float)d));
     // compute and print k+d as a double to 16 d.p.
+    printf("k + d = %.16f", (double)k + d);
 
     return 0;
 }

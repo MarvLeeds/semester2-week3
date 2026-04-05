@@ -13,6 +13,7 @@ int main( void ) {
     printf(" %p , %p\n",&k1,&k2);  // we print the memory addresses of both
 
     // what can you deduce about the memory usage and memory layout from inspecting the addresses?
+    // the data is stored contiguously in memory
 
     return 0;
 }
